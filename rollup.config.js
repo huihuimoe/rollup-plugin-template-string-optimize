@@ -1,4 +1,4 @@
-import templateStringOptimize from './lib/index'
+import templateStringOptimize from 'rollup-plugin-template-string-optimize'
 import babel from 'rollup-plugin-babel'
 
 export default [

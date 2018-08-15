@@ -1,5 +1,5 @@
-import acorn from 'acorn'
-import escodegen from 'escodegen'
+import acorn = require('acorn')
+import escodegen = require('escodegen')
 
 const isObject = (item: any): boolean =>
   Object.prototype.toString.call(item) === '[object Object]'
