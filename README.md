@@ -1,23 +1,24 @@
-# template-string-optimize-loader
-template string optimize loader module for webpack
+# rollup-plugin-template-string-optimize
+template string optimize plugin for rollup
 
 ## Installation
 
-    npm i template-string-optimize-loader -D
+    npm i rollup-plugin-template-string-optimize -D
     
 ## Usage
 
 ``` javascript
-module: {
-    rules: [
-        {
-            test: /\.js$/,
-            use: [
-                'template-string-optimize-loader',
-                'babel-loader'
-            ]
-        }
-    ]
+// rollup.config.js
+import templateStringOptimize from 'rollup-plugin-template-string-optimize'
+
+export default {
+  input: 'main.js',
+  plugins: [
+    templateStringOptimize(),
+    babel({
+      presets: [['@babel/env', { modules: false }]]
+    })
+  ]
 }
 ``` 
 

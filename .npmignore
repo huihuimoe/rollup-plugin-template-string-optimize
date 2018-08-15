@@ -1,6 +1,5 @@
 test
-webpack.config.js
-webpack.config.optimize.js
+rollup.config.js
 .gitignore
 .idea
 .npmignore
