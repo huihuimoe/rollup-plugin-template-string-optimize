@@ -28,7 +28,9 @@ export default function(options: never) {
     transform(code: string) {
       const tree = acorn.parse(code, acornOptions)
       traverse(tree)
-      return escodegen.generate(tree)
+      return escodegen.generate(tree, {
+        sourceMapWithCode: true
+      })
     }
   }
 }

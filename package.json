@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-template-string-optimize",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "template string optimize plugin for rollup",
   "main": "lib/index.js",
   "scripts": {
